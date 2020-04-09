@@ -24,7 +24,7 @@
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                                     </div>
                                     <div class="form">
-                                        <form action="#" class="row">
+                                        <form method="post" action="" class="row">
                                             <div class="form-group col-lg-6">
                                                 <input type="text" class="text form-control" name="url" placeholder="Url zum kürzen einfügen" required/>
                                             </div>
@@ -47,6 +47,11 @@
     <script src="frontend/javascript/external/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <?php 
+        // Start YOURLS engine
+        require_once( dirname(__FILE__).'/includes/load-yourls.php' );
+
+        // Change this to match the URL of your public interface. Something like: http://your-own-domain-here.com/index.php
+        $page = YOURLS_SITE . '/index.php' ;
         $site = YOURLS_SITE;
         if ( isset( $_REQUEST['url'] ) && $_REQUEST['url'] != 'http://' ) {
             // Get parameters -- they will all be sanitized in yourls_add_new_link()
