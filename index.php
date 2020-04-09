@@ -81,10 +81,10 @@
         // Part to be executed if FORM has been submitted
         if ( isset( $_REQUEST['url'] ) && $_REQUEST['url'] != 'http://' ) {
             if( $status == 'success' ) {
-                echo "<script>Swal.fire('Link erfolgreich gekürzt!','Dein Link wurde erfolgreich gekürzt','success');</script>";
+                echo "<script>Swal.fire('Link erfolgreich gekürzt!','Dein Link ". $url ." wurde erfolgreich gekürzt und ist nun und ist nun unter: ". $shorturl ." erreichbar.','success');</script>";
             }
             else {
-                echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine eingabe und probiere es erneut.','error');</script>";
+                echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine eingabe und probiere es erneut.<br>Fehler: ". $message ."','error');</script>";
             }
         }
     ?>
