@@ -32,7 +32,7 @@
                                                 <input type="text" class="text form-control" name="keyword" placeholder="Kurze URL" />
                                             </div>
                                             <div class="form-group col-12">
-                                                <input type="submit" class="button submit-button" value="Kürzen" disabled />
+                                                <input type="submit" class="button submit-button" value="Kürzen" />
                                             </div>
                                         </form>
                                     </div>
@@ -81,14 +81,11 @@
         // Part to be executed if FORM has been submitted
         if ( isset( $_REQUEST['url'] ) && $_REQUEST['url'] != 'http://' ) {
             if( $status == 'success' ) {
-                echo "<script>Swal.fire('Link erfolgreich gekürzt!','Dein Link '. $url .' wurde erfolgreich gekürzt und ist nun unter '. $shorturl .' aufrugbar.','success');</script>";
+                echo "<script>Swal.fire('Link erfolgreich gekürzt!',Dein Link wurde erfolgreich gekürzt','success');</script>";
             }
             else {
                 echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine eingabe und probiere es erneut.','error');</script>";
             }
-        }
-        else {
-            echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine eingabe und probiere es erneut.','error');</script>";
         }
     ?>
 </body>
