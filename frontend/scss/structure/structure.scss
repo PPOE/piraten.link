@@ -3,4 +3,9 @@ body{
 }
 .content{
     height: 100vh;
+    @media(max-width: 767px){
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 0;
+    }
 }
