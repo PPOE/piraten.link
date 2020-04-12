@@ -1,5 +1,6 @@
 body{
     background-color: $colorPirate;
+    font-family: $fontOpenSans;
 }
 .content{
     height: 100vh;
@@ -7,5 +8,8 @@ body{
         height: auto;
         min-height: 100vh;
         padding: 60px 0;
+    }
+    .form-wrapper{
+        padding-top: 40px;
     }
 }

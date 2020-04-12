@@ -20,8 +20,9 @@
                                         <img src="./frontend/images/PIRATENsignet.svg" alt="Piraten Signet">
                                     </div> 
                                     <div class="description text-center">
-                                        <h1>Piraten Link Shorter</h1>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                        <h1> Piraten.Link URL Shortener</h1>
+                                        <p>Wenn Du Dir lange Links auch so schlecht merkst wie wir, oder aber Flexibilität brauchst, dann kannst Du Dir hier einfach eine Short-URL anlegen, die mit piraten.link beginnt. Für Änderungen an bestehenden Links wendest Du Dich bitte an die <a href="mailto:agtechnik@piratenpartei.at">agtechnik[AT]piratenpartei.at</a>.</p>
+                                        <p><strong>Disclaimer</strong>: Unser Dienst leitet ausschließlich auf bestehende Inhalte weiter. Wir übernehmen daher keinerlei Verantwortung für die verlinkten Inhalte.</p>
                                     </div>
                                     <div class="form">
                                         <form method="post" action="" class="row">
@@ -36,6 +37,14 @@
                                             </div>
                                         </form>
                                     </div>
+                                </div>
+                                <div class="form-footer">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="https://wiki.piratenpartei.at/wiki/Piratenwiki:Impressum">Impressum</a></li>
+                                            <li><a href="https://www.piratenpartei.at">Piratenpartei Österreichs</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
