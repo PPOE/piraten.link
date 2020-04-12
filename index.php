@@ -21,8 +21,8 @@
                                     </div> 
                                     <div class="description text-center">
                                         <h1> Piraten.Link URL Shortener</h1>
-                                        <p>Wenn Du Dir lange Links auch so schlecht merkst wie wir, oder aber Flexibilität brauchst, dann kannst Du Dir hier einfach eine Short-URL anlegen, die mit piraten.link beginnt. Für Änderungen an bestehenden Links wendest Du Dich bitte an die <a href="mailto:agtechnik@piratenpartei.at">agtechnik[AT]piratenpartei.at</a>.</p>
-                                        <p><strong>Disclaimer</strong>: Unser Dienst leitet ausschließlich auf bestehende Inhalte weiter. Wir übernehmen daher keinerlei Verantwortung für die verlinkten Inhalte.</p>
+                                        <p>Wenn Du Dir lange Links auch so schlecht merkst wie wir, oder aber Flexibilität brauchst, dann kannst Du Dir hier einfach eine Short-URL anlegen, die mit <a href="https://piraten.link/">piraten.link/</a> beginnt. Für Änderungen an bestehenden Links wendest Du Dich bitte an die <a href="mailto:agtechnik@piratenpartei.at">agtechnik[AT]piratenpartei.at</a>.</p>
+                                        <p><strong>Disclaimer</strong>:<br> Unser Dienst leitet ausschließlich auf bestehende Inhalte weiter. Wir übernehmen daher keinerlei Verantwortung für die verlinkten Inhalte.</p>
                                     </div>
                                     <div class="form">
                                         <form method="post" action="" class="row">
