@@ -1,0 +1,40 @@
+.form-container{
+    background-color: $colorWhite;
+    padding: 50px;
+    position: relative;
+    border-radius: 10px;
+    .form{
+        .form-control{
+            &.text{
+                border: none;
+                background-color: #ebebeb;
+                display: inline;
+                vertical-align: top;
+                height: 3em;
+                font-weight: 700;
+                border-radius: 5px;
+                color: #000;
+            }
+        }
+        .submit-button{
+            background-color: $colorPirate;
+            height: 3em;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            transition: background-color .2s ease-in-out;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+            border: none;
+            &:hover{
+                background-color: darken($colorPirate, 10);
+                
+            }
+            &:disabled{
+                cursor: not-allowed;
+                background-color: lighten($colorPirate, 50);
+            }
+        }
+    }
+}
