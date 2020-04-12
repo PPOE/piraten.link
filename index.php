@@ -27,7 +27,7 @@
                                     <div class="form">
                                         <form method="post" action="" class="row">
                                             <div class="form-group col-lg-6">
-                                                <input type="text" class="text form-control" name="url" placeholder="Url zum kürzen einfügen" required/>
+                                                <input type="url" class="text form-control" name="url" placeholder="Url zum kürzen einfügen" required/>
                                             </div>
                                             <div class="form-group col-lg-6">
                                                 <input type="text" class="text form-control" name="keyword" placeholder="Kurze URL" />
