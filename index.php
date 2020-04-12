@@ -19,23 +19,28 @@
                                     <div class="image-above">
                                         <img src="./frontend/images/PIRATENsignet.svg" alt="Piraten Signet">
                                     </div> 
-                                    <div class="description text-center">
-                                        <h1> Piraten.Link URL Shortener</h1>
-                                        <p>Wenn Du Dir lange Links auch so schlecht merkst wie wir, oder aber Flexibilität brauchst, dann kannst Du Dir hier einfach eine Short-URL anlegen, die mit piraten.link beginnt. Für Änderungen an bestehenden Links wendest Du Dich bitte an die <a href="mailto:agtechnik@piratenpartei.at">agtechnik[AT]piratenpartei.at</a>.</p>
-                                        <p><strong>Disclaimer</strong>: Unser Dienst leitet ausschließlich auf bestehende Inhalte weiter. Wir übernehmen daher keinerlei Verantwortung für die verlinkten Inhalte.</p>
+                                    <div class="description text-left">
+                                        <h1 class="text-center"> Piraten.Link URL Shortener</h1>
+                                        <p>Wenn Du Dir lange Links auch so schlecht merkst wie wir, oder aber Flexibilität brauchst, dann kannst Du Dir hier einfach eine Short URL anlegen, die mit <a href="https://piraten.link/">piraten.link/</a> beginnt. Solltest Du einen bestehenden Link ändern müssen, dann wende Dich mit Deinem Anliegen an <a href="mailto:agtechnik@piratenpartei.at">agtechnik[AT]piratenpartei.at</a>.</p>
                                     </div>
+                                    <div class="spacer-small"></div>
                                     <div class="form">
                                         <form method="post" action="" class="row">
                                             <div class="form-group col-lg-6">
-                                                <input type="url" class="text form-control" name="url" placeholder="Url zum kürzen einfügen" required/>
+                                                <input type="url" class="text form-control" name="url" placeholder="URL zum Kürzen einfügen" required/>
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <input type="text" class="text form-control" name="keyword" placeholder="Kurze URL" />
+                                                <input type="text" class="text form-control" name="keyword" placeholder="kurze URL" />
                                             </div>
+                                            <div class="spacer-xsmall"></div>
                                             <div class="form-group col-12">
                                                 <input type="submit" class="button submit-button" value="Kürzen" />
                                             </div>
                                         </form>
+                                    </div>
+                                    <div class="spacer-xsmall"></div>
+                                    <div class="description text-center">
+                                        <p class="disclaimer"><strong>Disclaimer</strong>: Unser Dienst leitet ausschließlich auf bestehende Inhalte weiter. Wir übernehmen daher keinerlei Verantwortung für die verlinkten Inhalte.</p>
                                     </div>
                                 </div>
                                 <div class="form-footer">
@@ -90,10 +95,10 @@
         // Part to be executed if FORM has been submitted
         if ( isset( $_REQUEST['url'] ) && $_REQUEST['url'] != 'http://' ) {
             if( $status == 'success' ) {
-                echo "<script>Swal.fire('Link erfolgreich gekürzt!','Dein Link ". $url ." wurde erfolgreich gekürzt und ist nun und ist nun unter: ". $shorturl ." erreichbar.','success');</script>";
+                echo "<script>Swal.fire('Link erfolgreich gekürzt!','Dein Link ". $url ." wurde erfolgreich gekürzt und ist nun unter ". $shorturl ." erreichbar.','success');</script>";
             }
             else {
-                echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine eingabe und probiere es erneut.<br>Fehler: ". $message ."','error');</script>";
+                echo "<script>Swal.fire('Fehler','Leider ist ein Fehler aufgetreten. Bitte kontrolliere deine Eingabe und probiere es erneut.<br>Fehler: ". $message ."','error');</script>";
             }
         }
     ?>
